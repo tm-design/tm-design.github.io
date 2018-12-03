@@ -1,0 +1,103 @@
+@font-face
+{
+    font-family:'digital';
+    src: url('digital-7.regular.ttf');
+}
+@font-face
+{
+    font-family: 'poppins';
+    src: url('https://fonts.googleapis.com/css?family=Poppins');
+}
+
+body
+{
+    background-image: url('background.jpg');
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2
+{
+    font-family: 'poppins';
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+h1
+{
+    font-family: 'digital';
+    color: teal;
+    margin: 0px;
+    font-size: 120px;
+}
+
+h3
+{
+    font-family: 'digital';
+    color: teal;
+    margin: 0px;
+    font-size: 40px;
+}
+
+#title1, #title2
+{
+    width: 340px;
+    position: relative;
+    margin: 0px;
+}
+
+#title1
+{
+    right: 20px;
+}
+
+#title2
+{
+    left: 100px;
+}
+
+#clock
+{
+    display: flex;
+}
+
+#clock div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 15px;
+}
+
+#pm
+{
+    color: #001b1c;
+}
+
+#colon {
+    animation: blinker 2s linear infinite;
+  }
+  
+  @keyframes blinker {
+    0%
+    {
+        opacity: 1;
+    }    
+    70%
+    {
+        opacity: 1;
+    }
+    75% 
+    {
+      opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+  }
